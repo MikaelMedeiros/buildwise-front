@@ -4,6 +4,7 @@ import { FileUploadModule } from 'primeng/fileupload';
 import { TableModule } from 'primeng/table'
 import { BudgetListComponent } from './budget-list/budget-list.component';
 import { BudgetRouting } from './budget.routing';
+import { BudgetService } from './services/budget.service';
 
 
 
@@ -17,6 +18,9 @@ import { BudgetRouting } from './budget.routing';
     CommonModule,
     FileUploadModule,
     TableModule
+  ], 
+  providers: [
+    BudgetService
   ]
 })
 export class BudgetListModule { }
