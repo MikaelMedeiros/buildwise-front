@@ -14,8 +14,8 @@
     </ng-template>
     <ng-template pTemplate="body" let-budget>
         <tr>
-            <td>{{ budget.code }}</td>
-            <td>{{ budget.name }}</td>
+            <td> <p-button [routerLink]="['/detalhe', budget.code]" label="Editar" styleClass="p-button-warning"></p-button></td>
+            <td>{{ budget.name }} </td>
             <td>{{ budget.category }}</td>
             <td>{{ budget.quantity }}</td>
         </tr>

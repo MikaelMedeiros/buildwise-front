@@ -2,8 +2,6 @@ import { Component, OnInit } from '@angular/core';
 import { FileUploadEvent } from 'primeng/fileupload';
 import { Budget } from '../domain/budget';
 import { BudgetService } from '../services/budget.service';
-import { Observable } from 'rxjs';
-import { resetFakeAsyncZone } from '@angular/core/testing';
 
 @Component({
   selector: 'app-budget-list',
@@ -14,6 +12,7 @@ export class BudgetListComponent implements OnInit {
 
   maxFileSize: number =100000;
   budgets: Budget[] = [];
+
 
   constructor(private budgetService: BudgetService) { }
 
@@ -39,7 +38,19 @@ export class BudgetListComponent implements OnInit {
   }
 
   onUpload($event: FileUploadEvent) {
+    const files = $event.files;
+    this.budgetService.upload(files).subscribe(
+      {
+        next: (v) => mensagemSucesso(v),
+        error: (e) => this.handleError(e)
+      }
+    )
     throw new Error('Method not implemented.');
   }
 
 }
+
+function mensagemSucesso(v: any): void {
+  throw new Error('Function not implemented.');
+}
+

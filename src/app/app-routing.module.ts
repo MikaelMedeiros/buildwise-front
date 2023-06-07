@@ -1,9 +1,9 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { BudgetListModule } from './budget/budget.module';
+import { BudgetModule } from './budget/budget.module';
 
 const routes: Routes = [
-  { path: '', loadChildren: () => BudgetListModule}
+  { path: '', loadChildren: () => BudgetModule}
 ];
 
 @NgModule({

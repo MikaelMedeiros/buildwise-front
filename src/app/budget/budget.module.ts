@@ -5,13 +5,15 @@ import { TableModule } from 'primeng/table'
 import { BudgetListComponent } from './budget-list/budget-list.component';
 import { BudgetRouting } from './budget.routing';
 import { BudgetService } from './services/budget.service';
+import { BudgetDetailComponent } from './budget-detail/budget-detail.component';
 
 
 
 
 @NgModule({
   declarations: [
-    BudgetListComponent
+    BudgetListComponent,
+    BudgetDetailComponent
   ],
   imports: [
     BudgetRouting,
@@ -23,4 +25,4 @@ import { BudgetService } from './services/budget.service';
     BudgetService
   ]
 })
-export class BudgetListModule { }
+export class BudgetModule { }
