@@ -7,8 +7,7 @@ import { AppComponent } from './app.component';
 
 import { CardModule } from 'primeng/card';
 import { ButtonModule } from 'primeng/button';
-import { PainellateralmenuService } from './painellateralmenu/servico/painellateralmenu.service';
-
+import { HttpClientModule } from '@angular/common/http';
 
 
 
@@ -21,9 +20,10 @@ import { PainellateralmenuService } from './painellateralmenu/servico/painellate
     BrowserAnimationsModule,
     AppRoutingModule,
     CardModule,
-    ButtonModule
+    ButtonModule,
+    HttpClientModule
   ],
-  providers: [PainellateralmenuService],
+  providers: [],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

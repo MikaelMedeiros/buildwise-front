@@ -1,10 +1,10 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { PainellateralmenuComponent } from './painellateralmenu/painellateralmenu.component';
+import { PainellateralmenuComponent } from './painel-lateral-menu-detail/painel-lateral-menu-detail.component';
 import { PanelMenuModule } from 'primeng/panelmenu';
-import { PainellateralmenuService } from './servico/painellateralmenu.service';
+import { PainelLateralMenuService } from './services/painel-lateral-menu.service';
 import { PainellateralroutingRoutes } from './painellateralrouting.routing';
-import { HttpClient } from '@angular/common/http';
+import { HttpClientModule } from '@angular/common/http';
 
 
 
@@ -16,11 +16,10 @@ import { HttpClient } from '@angular/common/http';
   imports: [
     CommonModule,
     PanelMenuModule,
-    PainellateralroutingRoutes
+    PainellateralroutingRoutes    
   ],
   providers:[
-    PainellateralmenuService,
-    HttpClient
+    PainelLateralMenuService
   ]
 })
 export class PainellateralmenuModule { }

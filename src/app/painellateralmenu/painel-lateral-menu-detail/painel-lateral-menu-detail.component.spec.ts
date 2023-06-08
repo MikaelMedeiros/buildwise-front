@@ -1,6 +1,6 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { PainellateralmenuComponent } from './painellateralmenu.component';
+import { PainellateralmenuComponent } from './painel-lateral-menu-detail.component';
 
 describe('PainellateralmenuComponent', () => {
   let component: PainellateralmenuComponent;

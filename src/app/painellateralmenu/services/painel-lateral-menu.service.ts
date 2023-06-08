@@ -7,10 +7,9 @@ import { Observable,  } from "rxjs";
 
 
 @Injectable()
-export class PainellateralmenuService {
+export class PainelLateralMenuService {
 
   constructor(private http: HttpClient) { }
-
 
   getOpcoesMenuLateral(): Observable<MenuItem[]>{
     return this.http.get<MenuItem[]>('assets/data/menuItem.json');

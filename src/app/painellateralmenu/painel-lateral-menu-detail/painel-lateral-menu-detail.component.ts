@@ -1,19 +1,19 @@
 import { MenuItem } from 'primeng/api';
-import { PainellateralmenuService } from './../servico/painellateralmenu.service';
+import { PainelLateralMenuService } from '../services/painel-lateral-menu.service';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-painellateralmenu',
-  templateUrl: './painellateralmenu.component.html',
-  styleUrls: ['./painellateralmenu.component.css']
+  templateUrl: './painel-lateral-menu-detail.component.html',
+  styleUrls: ['./painel-lateral-menu-detail.component.css']
 })
 export class PainellateralmenuComponent implements OnInit {
 
   items: MenuItem[] = [];
 
-   constructor(private painellateralmenuService: PainellateralmenuService){}
+  constructor(private painellateralmenuService: PainelLateralMenuService){}
 
-  ngOnInit(): void {
+  ngOnInit() {
     this.initMenuItems();
   }
 

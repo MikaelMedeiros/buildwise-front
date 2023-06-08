@@ -1,13 +1,13 @@
 import { TestBed } from '@angular/core/testing';
 
-import { PainellateralmenuService } from './painellateralmenu.service';
+import { PainelLateralMenuService } from './painel-lateral-menu.service';
 
 describe('PainellateralmenuService', () => {
-  let service: PainellateralmenuService;
+  let service: PainelLateralMenuService;
 
   beforeEach(() => {
     TestBed.configureTestingModule({});
-    service = TestBed.inject(PainellateralmenuService);
+    service = TestBed.inject(PainelLateralMenuService);
   });
 
   it('should be created', () => {
