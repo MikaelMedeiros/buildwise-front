@@ -1,9 +1,12 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { BudgetModule } from './budget/budget.module';
+import { PainellateralmenuModule } from './painellateralmenu/painellateralmenu.module';
 
 const routes: Routes = [
-  { path: '', loadChildren: () => BudgetModule}
+  { path: 'list', loadChildren: () => BudgetModule},
+  { path: '', loadChildren: () => PainellateralmenuModule},
+
 ];
 
 @NgModule({
