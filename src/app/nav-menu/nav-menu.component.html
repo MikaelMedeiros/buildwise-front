@@ -1,0 +1,10 @@
+<div class="menu-header">
+  <p-toolbar styleClass="navbar">
+    <button (click)="esconderDiv()" class="btn" style="background-color: #1976d2;">
+      <img src="assets/imagens/menu2.png" style="max-width: 30px;">
+    </button>
+    <div class="flex align-items-center justify-content-between">
+      <p-fileUpload mode="basic" chooseLabel="Importar" name="demo[]" url="https://www.primefaces.org/cdn/api/upload.php" accept="image/*"  (onUpload)="onUpload($event)"></p-fileUpload>
+  </div>
+  </p-toolbar>
+</div>

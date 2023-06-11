@@ -9,11 +9,23 @@ import { CardModule } from 'primeng/card';
 import { ButtonModule } from 'primeng/button';
 import { HttpClientModule } from '@angular/common/http';
 
+import { ToolbarModule } from 'primeng/toolbar';
+import { NavMenuComponent } from './nav-menu/nav-menu.component';
+import { PainelLateralComponent } from './painel-lateral/painel-lateral.component';
+
+import { PanelMenuModule } from 'primeng/panelmenu';
+import { StyleClassModule } from 'primeng/styleclass';
+import { FileUploadModule } from 'primeng/fileupload';
+import { NavMenuService } from './nav-menu/services/nav-menu.service';
+
+
 
 
 @NgModule({
   declarations: [
     AppComponent,
+    NavMenuComponent,
+    PainelLateralComponent,
   ],
   imports: [
     BrowserModule,
@@ -21,9 +33,12 @@ import { HttpClientModule } from '@angular/common/http';
     AppRoutingModule,
     CardModule,
     ButtonModule,
-    HttpClientModule
-  ],
-  providers: [],
+    HttpClientModule,
+    ToolbarModule,
+    PanelMenuModule,
+    StyleClassModule,
+    FileUploadModule  ],
+  providers: [NavMenuService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

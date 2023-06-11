@@ -1,9 +1,4 @@
 <p-table [value]="budgets" styleClass="p-datatable-gridlines" [tableStyle]="{ 'min-width': '50rem' }">
-    <ng-template pTemplate="caption">
-        <div class="flex align-items-center justify-content-between">
-            <p-fileUpload mode="basic" chooseLabel="Choose" name="demo[]" url="https://www.primefaces.org/cdn/api/upload.php" accept="image/*" [maxFileSize]=maxFileSize (onUpload)="onUpload($event)"></p-fileUpload>
-        </div>
-    </ng-template>
     <ng-template pTemplate="header">
         <tr>
             <th>Code</th>

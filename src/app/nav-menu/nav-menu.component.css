@@ -1,0 +1,8 @@
+.menu-header{
+  width: 100%;
+  background-color: #1976d2;
+}
+
+:host ::ng-deep .p-toolbar {
+  border: 0px;
+}
