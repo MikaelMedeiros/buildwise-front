@@ -2,3 +2,11 @@
   background: #1976d2;
 }
 
+.teste {
+  display: flex;
+}
+
+.teste > div {
+  flex-grow: 1;
+  flex-shrink: 0;
+}

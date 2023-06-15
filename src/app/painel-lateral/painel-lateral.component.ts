@@ -21,7 +21,9 @@ export class PainelLateralComponent {
                         items: [
                             {
                                 label: 'Bookmark',
-                                icon: 'pi pi-fw pi-bookmark'
+                                icon: 'pi pi-fw pi-bookmark',
+                                routerLink: 'list'
+
                             },
                             {
                                 label: 'Video',

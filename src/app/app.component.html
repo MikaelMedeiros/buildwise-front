@@ -1,5 +1,12 @@
 <app-nav-menu></app-nav-menu>
-<app-painel-lateral  *ngIf="exibirDiv"></app-painel-lateral>
-<router-outlet></router-outlet>
+<div class="teste">
+    <div>
+        <app-painel-lateral  *ngIf="exibirDiv"></app-painel-lateral>
+    </div>
+    <div>
+        <router-outlet></router-outlet>
+    </div>    
+</div>
+
 
 

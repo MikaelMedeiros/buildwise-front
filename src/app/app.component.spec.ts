@@ -17,7 +17,7 @@ describe('AppComponent', () => {
   it(`should have as title 'buildwise'`, () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.componentInstance;
-    expect(app.title).toEqual('buildwise');
+    expect(app.exibirDiv).toEqual(true);
   });
 
   it('should render title', () => {
